@@ -11,17 +11,27 @@ const codes = [
   "a"
 ];
 
-function key
+var index = 0;
 
-function init() {
-  // your code here
-  var entCode = ''
-  setDOM()
+function keyHandler(e) {
+  const key = e.key;
   
-  while (true) {
-    if (entCode.length==20) {
-      checkCode(entCode)
+  if (key===codes[index]) {
+    index++;
+    
+    if (index===codes.length) {
+      alert('Congatulatory message');
+      
+      index = 0;
     }
   }
   
+  else {
+    index = 0;
+  }
+}
+
+function init() {
+  document.body.setEventListener
+
 }

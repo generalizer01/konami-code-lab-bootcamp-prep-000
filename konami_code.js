@@ -32,6 +32,7 @@ function keyHandler(e) {
 }
 
 function init() {
-  document.body.addEventListener
+  document.body.addEventListener('keydown',function(e) {
+    keyHandler(e) });
 
 }

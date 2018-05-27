@@ -32,6 +32,6 @@ function keyHandler(e) {
 }
 
 function init() {
-  document.body.setEventListener
+  document.body.addEventListener
 
 }
